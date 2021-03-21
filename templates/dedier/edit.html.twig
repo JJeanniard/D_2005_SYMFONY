@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Dedier{% endblock %}
+
+{% block body %}
+    <h1>Edit Dedier</h1>
+
+    {{ include('dedier/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('dedier_index') }}">back to list</a>
+
+    {{ include('dedier/_delete_form.html.twig') }}
+{% endblock %}

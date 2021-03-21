@@ -30,7 +30,7 @@ class Dedier
     private $description;
 
     /**
-     * @ORM\OneToMany(targetEntity=Ip::class, mappedBy="dedier")
+     * @ORM\OneToMany(targetEntity=Ip::class, cascade={"persist", "remove"}, mappedBy="dedier")
      */
     private $ips;
 

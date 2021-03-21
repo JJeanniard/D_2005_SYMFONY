@@ -28,7 +28,7 @@ class Ip
     private $description;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Dedier::class, inversedBy="ips")
+     * @ORM\OneToOne(targetEntity=Dedier::class, inversedBy="ips")
      * @ORM\JoinColumn(nullable=false)
      */
     private $dedier;

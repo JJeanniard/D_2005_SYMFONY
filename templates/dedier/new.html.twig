@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Dedier{% endblock %}
+
+{% block body %}
+    <h1>Create new Dedier</h1>
+
+    {{ include('dedier/_form.html.twig') }}
+
+    <a href="{{ path('dedier_index') }}">back to list</a>
+{% endblock %}
